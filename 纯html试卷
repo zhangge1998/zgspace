@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>统一建模语言理论测试</h1>
+<div>
+    <div><b>考试科目：统一建模语言</b></div>
+    <div><b>时间：100分钟</b></div>
+    <div><b>得分：</b></div>
+</div>
+<div>
+    <div><b>班级（必填）：
+        <label><input type="text" size="20"></label></b></div>
+    <div><b>学号（必填）：
+        <label><input type="text" size="20"></label></b></div>
+    <div><b>姓名（必填）：
+        <label><input type="text" size="20"></label></b></div>
+</div>
+<div>
+    <div><b>一、填空题（每空5分，共20分）</b></div>
+    <blockquote>
+        <dl>
+            <dt>1.UML的中文全称是：</dt>
+            <dd class="text"><label><input type="text" size="20"></label></dd>
+            <dt>2.对象最突出的特征是：</dt>
+            <dd class="text"><label><input type="text" size="20">
+                <input type="text" size="20">
+                <input type="text" size="20"></label></dd>
+        </dl>
+    </blockquote>
+</div>
+<div>
+    <div><b>二、选择题（每空10分，共20分）</b></div>
+    <blockquote>
+        <dl>
+            <dt>1.UML与软件工程的关系是：</dt>
+            <dd><label><input name="2-1" type="radio" value="">(A)UML就是软件工程</label></dd>
+            <dd><label><input name="2-1" type="radio" value="">(B)UML参与到软件工程软件开发的几个阶段</label></dd>
+            <dd><label><input name="2-1" type="radio" value="">(C)UML与软件工程无关</label></dd>
+            <dd><label><input name="2-1" type="radio" value="">(D)UML是软件工程的一部分</label></dd>
+            <dt>2.Java语言支持：</dt>
+            <dd><label><input name="2-2" type="radio" value="">(A)单继承</label></dd>
+            <dd><label><input name="2-2" type="radio" value="">(B)多继承</label></dd>
+            <dd><label><input name="2-2" type="radio" value="">(C)单继承和多继承都支持</label></dd>
+            <dd><label><input name="2-2" type="radio" value="">(D)单继承和多继承都不支持</label></dd>
+        </dl>
+    </blockquote>
+</div>
+<div>
+    <div><b>三、多项选择题（每题10分，共20分）</b></div>
+    <blockquote>
+        <dl>
+            <dt>1.用例的粒度分为以下那三种：</dt>
+            <dd><label><input name="3-1" type="checkbox" value="">(A)概述级</label></dd>
+            <dd><label><input name="3-1" type="checkbox" value="">(B)需求级</label></dd>
+            <dd><label><input name="3-1" type="checkbox" value="">(C)用户目标级</label></dd>
+            <dd><label><input name="3-2" type="checkbox" value="">(D)子功能级</label></dd>
+            <dt>2.类图由以下那三部分组成：</dt>
+            <dd><label><input name="3-2" type="checkbox" value="">(A)名称(Name)</label></dd>
+            <dd><label><input name="3-2" type="checkbox" value="">(B)属性(Attribute)</label></dd>
+            <dd><label><input name="3-2" type="checkbox" value="">(C)操作(Operation)</label></dd>
+            <dd><label><input name="3-2" type="checkbox" value="">(D)方法(Function)</label></dd>
+        </dl>
+    </blockquote>
+</div>
+<div>
+    <div><b>四、判断题（每题10分，共20分）</b></div>
+    <blockquote>
+        <ol>
+            <li>用例图只是用于和客户交流和沟通的，用于确定需求。
+                <label><input name="4-1" type="radio" value="y"></label>
+                <label><input name="4-1" type="radio" value="n"></label>
+            </li>
+            <li>在状态图中终止状态在一个状态图中允许有任意多个。
+                <label><input name="4-2" type="radio" value="y"></label>
+                <label><input name="4-2" type="radio" value="n"></label>
+            </li>
+        </ol>
+    </blockquote>
+</div>
+<div>
+    <div><b>五、简答题（每题20分，共20分) </b></div>
+    <blockquote>
+        <p>1.简述什么是模型以及模型的表现形式?</p>
+        <label><textarea name="5" rows="5" cols="130"></textarea></label>
+    </blockquote>
+</div>
+<div><label><input type="button" value="计算分数"></label></div>
+
+</body>
+</html>
+
+

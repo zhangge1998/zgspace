@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function check() {
+            var classNum = document.getElementById("1");
+            var snoNum = document.getElementById("2");
+            var nameNum = document.getElementById("3");
+            if (classNum.value === "" || snoNum.value === "" || nameNum.value === "") {
+                classNum.style.borderColor = "red";
+                snoNum.style.borderColor = "red";
+                nameNum.style.borderColor = "red";
+                alert("请检查必填元素！")
+            }
+            else {
+                var grade = 0;
+                if (document.getElementById("answer1").value === "统一建模语言")
+                    grade += 5;
+                if (document.getElementById("answer2").value === "封装性")
+                    grade += 5;
+                if (document.getElementById("answer3").value === "继承性")
+                    grade += 5;
+                if (document.getElementById("answer4").value === "多态性")
+                    grade += 5;
+                if (document.getElementById("answer5").checked)
+                    grade += 10;
+                if (document.getElementById("answer6").checked)
+                    grade += 10;
+                if (document.getElementById("answer7").checked && document.getElementById("answer8").checked && document.getElementById("answer9").checked)
+                    grade += 10;
+                if (document.getElementById("answer10").checked && document.getElementById("answer11").checked && document.getElementById("answer12").checked)
+                    grade += 10;
+                if (document.getElementById("answer13").checked)
+                    grade += 10;
+                if (document.getElementById("answer14").checked)
+                    grade += 10;
+                if (document.getElementById("answer15").value === "模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是某种图形；或者是一种数学表达式")
+                    grade += 20;
+                document.getElementById("score").innerHTML = "得分：" + grade;
+                document.getElementById("score").innerHTML.style.color = "red";
+            }
+
+        }
+    </script>
+</head>
+<body style="padding-bottom:20px">
+
+<div class="container">
+
+    <div class="text-center"><h1>统一建模语言理论测试</h1></div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-4"><b>考试科目：统一建模语言</b></div>
+                <div class="col-md-4"><b>时间：100分钟</b></div>
+                <div class="col-md-4" id="score"><b>得分：</b></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-4" id="one"><b>班级（必填）：
+                    <label><input type="text" id="1" size="20"></label></b></div>
+                <div class="col-md-4" id="two"><b>学号（必填）：
+                    <label><input type="text" id="2" size="20"></label></b></div>
+                <div class="col-md-4" id="three"><b>姓名（必填）：
+                    <label><input type="text" id="3" size="20"></label></b></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+
+        <div class="panel-heading"><b>一、填空题（每空5分，共20分）</b></div>
+        <div class="panel-body">
+            <ol>
+                <li>UML的中文全称是：</li>
+                <label><input type="text" id="answer1" size="20"></label>
+                <li>对象最突出的特征是：</li>
+                <label>
+                    <input type="text" id="answer2" size="20">
+                    <input type="text" id="answer3" size="20">
+                    <input type="text" id="answer4" size="20">
+                </label>
+            </ol>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>二、选择题（每空10分，共20分）</b></div>
+        <div class="panel-body">
+            <ol>
+                <li>UML与软件工程的关系是：
+                    <div class="radio">
+                        <p><label><input name="2-1" type="radio" value="">(A)UML就是软件工程</label></p>
+                        <p><label><input name="2-1" type="radio" id="answer5" value="">(B)UML参与到软件工程软件开发的几个阶段</label>
+                        </p>
+                        <p><label><input name="2-1" type="radio" value="">(C)UML与软件工程无关</label></p>
+                        <p><label><input name="2-1" type="radio" value="">(D)UML是软件工程的一部分</label></p>
+                    </div>
+                </li>
+                <li>Java语言支持：
+                    <div class="radio">
+                        <p><label><input name="2-2" type="radio" id="answer6" value="">(A)单继承</label></p>
+                        <p><label><input name="2-2" type="radio" value="">(B)多继承</label></p>
+                        <p><label><input name="2-2" type="radio" value="">(C)单继承和多继承都支持</label></p>
+                        <p><label><input name="2-2" type="radio" value="">(D)单继承和多继承都不支持</label></p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>三、多项选择题（每题10分，共20分）</b></div>
+        <div class="panel-body">
+            <ol>
+                <li>用例的粒度分为以下那三种：
+                    <div class="checkbox">
+                        <p><label><input name="3-1" id="answer7" type="checkbox" value="">(A) 概述级</label></p>
+                        <p><label><input name="3-1" type="checkbox" value="">(B) 需求级</label></p>
+                        <p><label><input name="3-1" id="answer8" type="checkbox" value="">(C) 用户目标级</label></p>
+                        <p><label><input name="3-2" id="answer9" type="checkbox" value="">(D) 子功能级</label></p>
+                    </div>
+                </li>
+                <li>类图由以下那三部分组成：
+                    <div class="checkbox">
+                        <p><label><input name="3-2" id="answer10" type="checkbox" value="">(A)名称(Name)</label></p>
+                        <p><label><input name="3-2" id="answer11" type="checkbox" value="">(B)属性(Attribute)</label>
+                        </p>
+                        <p><label><input name="3-2" id="answer12" type="checkbox" value="">(C)操作(Operation)</label>
+                        </p>
+                        <p><label><input name="3-2" type="checkbox" value="">(D)方法(Function)</label></p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>四、判断题（每题10分，共20分）</b></div>
+        <div class="panel-body">
+            <ol>
+                <li>用例图只是用于和客户交流和沟通的，用于确定需求。
+                    <label><input name="4-1" type="radio" value="y"></label>
+                    <span class="glyphicon glyphicon-ok"></span>
+                    <label><input name="4-1" type="radio" id="answer13" value="n"></label>
+                    <span class="glyphicon glyphicon-remove"></span>
+                </li>
+                <li>在状态图中终止状态在一个状态图中允许有任意多个。
+                    <label><input name="4-2" type="radio" id="answer14" value="y"></label>
+                    <span class="glyphicon glyphicon-ok"></span>
+                    <label><input name="4-2" type="radio" value="n"></label>
+                    <span class="glyphicon glyphicon-remove"></span>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>五、简答题（每题20分，共20分) </b></div>
+        <div class="panel-body">
+            <ol>
+                <li><p>简述什么是模型以及模型的表现形式?</p>
+                    <form role="form">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" id="answer15"></textarea>
+                        </div>
+                    </form>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-info btn-sm" onclick="check()">计算分数</button>
+    </div>
+
+</div>
+
+</body>
+</html>
